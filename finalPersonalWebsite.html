@@ -14,9 +14,9 @@
     <body class="dark-theme || light-theme">
 
             <!-- Start of Home Page -->
-            <section class="homepage">
+            <section class="homePage">
                 <div class="container grid">
-                    <div class="homepage-text">
+                    <div class="homePage-text">
                         <h1>Johan Delao</h1>
                         <h2>Student Software Engineer</h2>
                         <button id="myButton" onclick="window.open('UpdatedResume.pdf')">RESUME</button>
@@ -26,13 +26,13 @@
         <!-- End of Home Page -->
 
         <!-- Start of About Page -->
-            <section class="aboutpage">
+            <section class="aboutPage">
                 <div class="container">
                     <h2 class="aboutTitle">About Me</h2>
                     <div class="row">
                         <div class="col">
                             <div class="picOfMe">
-                                <img src="JohanGraduationModifiedSmall.jpg" style="width: 330px; height: 350px;" alt="...">
+                                <img src="JohanGraduationModifiedSmall.jpg" style="width: 320px; height: 350px;" alt="...">
                             </div>
                         </div>
                         <div class="col">
@@ -45,5 +45,57 @@
                     </div>
                 </div>
             </section>
+            <!-- End of About Page -->
+
+            <!-- Start of Project Page -->
+            <section class="projectPage">
+                <div class="container">
+                    <h2 class="projectTitle">Projects</h2>
+                    <div class="row">
+                        <div class="col">
+                            <div class="trilogyText">
+                                <h3 class="trilogyTitle">Trilogy URL Copier</h3>
+                                <p class="trilogyDescription">Trilogy is a chrome extension that makes copying and sending URLs easier. With just one click you will be able to send any link to anyone. The front end is built in HTML and CSS while the backend is built in JavaScript. Has a 5 star rating in the Chrome Web Store.</p>
+                                <button id="trilogyButton" onclick="window.open('https://chrome.google.com/webstore/detail/trilogy-url-copier/nlbbmjbfkbfgdbfhaoicjignkbgjdico?hl=en-US')">
+                                <img src="chromeWebStoreButton.png" style="border-style: none; border: none;" alt="...">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="trilogyPic">
+                                <img src="trilogyExtension.PNG" style="width: 400px; height: 350px;" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Project Page -->
+
+            <!-- Start of Contact Page -->
+            <section class="contactPage">
+                <div class="container">
+                    <div class="contactHeader">
+                        <h2 class="contactTitle">Want to Chat?</h2>
+                        <h3 class="contactDesc">Contact Me</h3>
+                    </div>
+                    <div class="contactForm">
+                        <form id="contactForm" action="#" onsubmit="submitContactForm(this);return false" _lpchecked="1">
+                            <h1>Name</h1>
+                            <input name="name" id="nameField" type="text" required="">
+    
+                            <h1>Email</h1>
+                            <input name="email" id="emailField" type="email" required="">
+                            
+                            <h1>Message</h1>
+                            <textarea name="message" id="messageField" required="" style="height: 10rem;"></textarea>
+    
+                            <br>
+    
+                            <button class="btn mainBtn" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        
 
     </body>

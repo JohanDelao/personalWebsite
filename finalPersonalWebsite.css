@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: raleway, sans-serif;
+    font-family: source-sans-pro, sans-serif;
     color: #333;
     line-height: 1.6;
 }
@@ -56,15 +56,21 @@ a {
     color: #333;
 }
 
+form {
+    display: block;
+    margin-top: 0em;
+    margin-block-end: 1em;
+}
+
 /* HomePage */
-.homepage {
+.homePage {
     min-height: 100vh;
     height: 100vh;
     background-color: var(--primary-color);
     position: relative;
 }
 
-.homepage-text h1 {
+.homePage-text h1 {
     margin: 0;
     font-size: 4rem;
     font-family: raleway, sans-serif;
@@ -74,7 +80,7 @@ a {
     letter-spacing: 4px;
 }
 
-.homepage-text h2 {
+.homePage-text h2 {
     font-family: source-sans-pro, sans-serif;
     font-weight: 525;
     font-size: 2.1rem;
@@ -82,8 +88,8 @@ a {
     letter-spacing: 6px;
 }
 
-.homepage::before, 
-.homepage::after {
+.homePage::before, 
+.homePage::after {
     content: '';
     position: absolute;
     height: 100px;
@@ -99,7 +105,7 @@ a {
 }
 
 
-button {
+.homePage-text button {
     background: white; 
     padding-bottom: 4px;
     padding-top: 4px;
@@ -119,12 +125,13 @@ button {
 }
 
 /* About Page */
-.aboutpage {
+.aboutPage {
     background: var(--secondary-color);
     position: relative;
     color: white;
     padding: 4rem 0;
     padding-bottom: 10%;
+    margin-top: 20px;
 }
 
 .aboutTitle {
@@ -135,7 +142,7 @@ button {
     text-align: center;
 }
 
-.aboutpage .row {
+.aboutPage .row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
@@ -159,8 +166,8 @@ button {
     font-size: 19px;
 }
 
-.aboutpage::before, 
-.aboutpage::after {
+.aboutPage::before, 
+.aboutPage::after {
     content: '';
     position: absolute;
     height: 100px;
@@ -172,5 +179,100 @@ button {
     -webkit-transform: skewY(-3deg);
     -moz-transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
+    margin-bottom: 19px;
 
+}
+
+/* Projects Page */
+.projectPage {
+    background: var(--primary-color);
+    position: relative;
+    color: #333;
+    padding: 4rem 0;
+    padding-bottom: 10%;
+    /* margin-top: 20px; */
+}
+
+.projectTitle {
+    margin: 0 0 4.5rem;
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.trilogyTitle {
+    text-align: left;
+    font-weight: 600;
+}
+
+.trilogyDescription {
+    font-size: 19px;
+}
+
+#trilogyButton {
+    background: var(--primary-color);
+}
+
+.trilogyPic {
+    border-style: solid;
+}
+
+.projectPage::before, 
+.projectPage::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: var(--secondary-color);
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    margin-bottom: 19px;
+    }
+
+/* Contact Page */
+
+.contactPage {
+    background: var(--secondary-color);
+    position: relative;
+    color: var(--primary-color);
+    padding: 4rem 0;
+    padding-bottom: 10%;
+}
+
+.contactTitle {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contactDesc {
+    margin: 0 0 2rem;
+    text-align: center;
+}
+
+.contactForm {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactForm input {
+    margin-bottom: .5rem;
+}
+
+.contactForm input, textarea {
+    outline: none;
+    border: none;
+    height: 2.75rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    padding: 1rem;
+    color: var(--secondary-color);
+    font-size: 1.2em;
 }
