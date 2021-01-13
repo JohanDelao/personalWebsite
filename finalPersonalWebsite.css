@@ -1,6 +1,7 @@
 :root {
     --primary-color: white;
     --secondary-color: #36363c;
+    /* --secondary-color: #171c28 */
 }
 
 * {
@@ -21,6 +22,10 @@ ul {
 
 p {
     margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* img {
@@ -218,6 +223,11 @@ form {
     border-style: solid;
 }
 
+.trilogyPic img {
+    width: 400px;
+    height: 350px;
+}
+
 .projectPage::before, 
 .projectPage::after {
     content: '';
@@ -241,7 +251,8 @@ form {
     position: relative;
     color: var(--primary-color);
     padding: 4rem 0;
-    padding-bottom: 10%;
+    padding-bottom: 7%;
+    text-align: center;
 }
 
 .contactTitle {
@@ -252,27 +263,184 @@ form {
 }
 
 .contactDesc {
-    margin: 0 0 2rem;
+    margin: 0 0 1rem;
     text-align: center;
 }
 
-.contactForm {
+.contactButton {
     margin-left: auto;
     margin-right: auto;
 }
 
-.contactForm input {
-    margin-bottom: .5rem;
+.contactButton button {
+    background: white; 
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 600;
+    color: black;
+    border: 4px solid black;
 }
 
-.contactForm input, textarea {
-    outline: none;
-    border: none;
-    height: 2.75rem;
-    width: 100%;
-    margin-top: 0.5rem;
-    border-radius: 4px;
-    padding: 1rem;
-    color: var(--secondary-color);
-    font-size: 1.2em;
+.contactButton button:hover {
+    background: black;
+    color: white;
+}
+
+/* End of Site */
+.endOfSite {
+    background: rgb(31, 31, 31);
+    position: relative;
+    color: white;
+    padding: 4rem 0;
+    padding-bottom: 10%;
+    text-align: center;
+
+}
+
+.socialIcons, .socialIcons a {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons {
+    flex-direction: row;
+}
+
+.socialIcons a {
+    flex-direction: column;
+    color: #fff;
+    font-size: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 1.6rem;
+    transition: all .2s ease-in;
+    text-decoration: none;
+}
+
+i.fab.fa-linkedin-in:hover {
+    font-size: 3rem;
+}
+
+i.fa.fa-github.fa-inverse:hover {
+    font-size: 3rem;
+}
+
+
+.developByMe h4 {
+    font-size: 1rem;
+}
+
+/* Tablets and under */
+@media(max-width: 768px) {
+
+}
+
+
+/* Mobile */
+@media(max-width: 500px) {
+
+    /* Home Page */
+    .homePage::before, 
+    .homePage::after {
+        content: '';
+        position: absolute;
+        height: 0px;
+        bottom: 0px;
+        right: 0;
+        left: 0;
+        background: var(--secondary-color);
+        transform: 0;
+        -webkit-transform: 0;
+        -moz-transform: 0;
+        -ms-transform: 0;
+
+    }
+    /* About Page */
+    .aboutTitle {
+        margin: 0 0 2rem;
+    }
+    .aboutText {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .picOfMe img {
+        height: 320px;
+        width: 290px;
+    }
+
+    .aboutPage::before, 
+    .aboutPage::after {
+        content: '';
+        position: absolute;
+        height: 0px;
+        bottom: 0px;
+        right: 0;
+        left: 0;
+        background: var(--primary-color);
+        transform: 0;
+        -webkit-transform: 0;
+        -moz-transform: 0;
+        -ms-transform: 0;
+        margin-bottom: 0;
+
+}
+
+    /* Project Page */
+    .projectTitle {
+        margin: 0 0 2rem;
+    }
+
+    .trilogyTitle {
+        font-size: 1.5rem;
+    }
+
+    #trilogyButton {
+        background: var(--primary-color);
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .trilogyPic img {
+        display: none;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .trilogyPic {
+        border-style: none;
+        display: none;
+    }
+
+    .trilogyDescription {
+        font-size: 17px;
+    }
+
+    .projectPage::before, 
+    .projectPage::after {
+        content: '';
+        position: absolute;
+        height: 0px;
+        bottom: 0px;
+        right: 0;
+        left: 0;
+        background: var(--secondary-color);
+        transform: 0;
+        -webkit-transform: 0;
+        -moz-transform: 0;
+        -ms-transform: 0;
+        margin-bottom: 0;
+    }
+
+
 }
