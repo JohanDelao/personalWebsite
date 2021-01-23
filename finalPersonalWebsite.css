@@ -485,7 +485,7 @@ hr {
     .aboutText {
         margin-top: 5px;
         text-align: center;
-        font-size: 17px;
+        font-size: 19px;
         width: 100%;
     }
 
@@ -540,7 +540,7 @@ hr {
     }
 
     .trilogyDescription {
-        font-size: 17px;
+        font-size: 19px;
     }
 
     .projectPage::before, 
