@@ -236,8 +236,26 @@ form {
 }
 
 .trilogyPic img {
-    width: 400px;
+    width: 550px;
     height: 350px;
+}
+
+.reachDescription {
+    font-size: 19px;
+}
+
+.reachPic {
+    border-style: solid;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.reachPic img {
+    width: 550px;
+    height: 350px;
+}
+
+.projectPage .row {
+    padding-bottom: 5rem;
 }
 
 .projectPage::before, 
