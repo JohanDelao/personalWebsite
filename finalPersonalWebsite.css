@@ -240,12 +240,8 @@ form {
 }
 
 .trilogyPic img {
-<<<<<<< HEAD
     width: 550px;
-=======
-    width: 400px;
     border-style: solid;
->>>>>>> a6581b20e7226bd8a0c24b0f9d143e4366ff5eab
     height: 350px;
 }
 
@@ -254,12 +250,12 @@ form {
 }
 
 .reachPic {
-    border-style: solid;
     animation: slideInFromRight 1s ease-in;
 }
 
 .reachPic img {
     width: 550px;
+    border-style: solid;
     height: 350px;
 }
 
