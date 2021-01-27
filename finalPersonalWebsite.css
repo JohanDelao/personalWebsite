@@ -1,7 +1,8 @@
 :root {
+    /* --primary-color: #007CC7; */
     --primary-color: white;
     --secondary-color: #36363c;
-    /* --secondary-color: #171c28 */
+    /* --secondary-color: #203647 */
 }
 
 * {
@@ -13,6 +14,7 @@
 body {
     font-family: source-sans-pro, sans-serif;
     color: #333;
+    /* color: white; */
     line-height: 1.6;
 }
 
@@ -59,6 +61,7 @@ a {
 a {
     text-decoration: none;
     color: #333;
+    /* color: white; */
 }
 
 form {
@@ -91,6 +94,7 @@ form {
     font-weight: 525;
     font-size: 2.1rem;
     color: #817B7B;
+    /* color: whitesmoke; */
     letter-spacing: 6px;
     animation: slideInFromLeft 1s ease-in;
 }
@@ -199,6 +203,7 @@ form {
     background: var(--primary-color);
     position: relative;
     color: #333;
+    /* color: white; */
     padding: 4rem 0;
     padding-bottom: 10%;
     /* margin-top: 20px; */
@@ -231,12 +236,16 @@ form {
 }
 
 .trilogyPic {
-    border-style: solid;
     animation: slideInFromRight 1s ease-in;
 }
 
 .trilogyPic img {
+<<<<<<< HEAD
     width: 550px;
+=======
+    width: 400px;
+    border-style: solid;
+>>>>>>> a6581b20e7226bd8a0c24b0f9d143e4366ff5eab
     height: 350px;
 }
 
@@ -279,7 +288,8 @@ form {
 .contactPage {
     background: var(--secondary-color);
     position: relative;
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
+    color: white;
     padding: 4rem 0;
     padding-bottom: 7%;
     text-align: center;
