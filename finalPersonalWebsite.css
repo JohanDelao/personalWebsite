@@ -249,6 +249,11 @@ form {
     font-size: 19px;
 }
 
+.reachTitle {
+    text-align: left;
+    font-weight: 600;
+}
+
 .reachPic {
     animation: slideInFromRight 1s ease-in;
 }
@@ -257,6 +262,26 @@ form {
     width: 550px;
     border-style: solid;
     height: 350px;
+}
+
+#reactButton {
+    background: white; 
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 550;
+    color: black;
+    border: 2px solid black;
+    animation: slideInFromLeft 1s ease-in;
+}
+
+#reactButton:hover {
+    background: black;
+    color: white;
 }
 
 .projectPage .row {
@@ -565,6 +590,15 @@ hr {
 
     .trilogyDescription {
         font-size: 19px;
+    }
+
+    .reachPic img {
+        display: none;
+    }
+
+    .reachPic {
+        border-style: none;
+        display: none;
     }
 
     .projectPage::before, 
